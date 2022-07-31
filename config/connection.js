@@ -1,6 +1,7 @@
-require('dotenv').config();
-
+// imports Sequelize constructor
 const Sequelize = require('sequelize');
+// environment variable package to hide MySQL credentials
+require('dotenv').config();
 
 const sequelize = process.env.JAWSDB_URL
   ? new Sequelize(process.env.JAWSDB_URL)
