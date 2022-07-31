@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
-
 router.get('/', (req, res) => {
   // find all categories
   Category.findAll()
@@ -83,6 +82,7 @@ router.delete('/:id', (req, res) => {
       res.status(404).json({ message: 'No category found with this id.' });
       return;
     }
+    res.json(dbCategoryData); // this is why my DELETE route was hanging up, I think
   })
   .catch(err => {
     console.log(err);
