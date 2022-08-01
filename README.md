@@ -34,13 +34,14 @@ THEN I am able to successfully create, update, and delete data in my database
 ```
 ## Usage
 ### Deployed Application Demonstration
-![Deployed application](#)
+![Deployed application](/E-commerce%20Walkthrough.gif)
 
 ## Built With
 * Node.js
 * MySQL
 * Sequelize
 * npm MySQL2 package
+* npm dotenv package
 
 
 
